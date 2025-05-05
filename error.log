@@ -1,0 +1,32 @@
+[2025-05-05T07:53:28.687Z] PrismaClientInitializationError: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$prisma$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].movies.findMany()` invocation in
+D:\projects\next\next_testing\.next\server\chunks\[root-of-the-server]__f2a1da9f._.js:143:169
+
+  140   ]
+  141 }
+  142 */ try {
+→ 143       const movies = await __TURBOPACK__imported__module__$5b$project$5d2f$prisma$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].movies.findMany(
+Can't reach database server at `localhost:3388`
+
+Please make sure your database server is running at `localhost:3388`.
+    at zn.handleRequestError (D:\projects\next\next_testing\node_modules\@prisma\client\runtime\library.js:121:7759)
+    at zn.handleAndLogRequestError (D:\projects\next\next_testing\node_modules\@prisma\client\runtime\library.js:121:6784)
+    at zn.request (D:\projects\next\next_testing\node_modules\@prisma\client\runtime\library.js:121:6491)
+    at async l (D:\projects\next\next_testing\node_modules\@prisma\client\runtime\library.js:130:9778)
+    at async GET (D:\projects\next\next_testing\.next\server\chunks\[root-of-the-server]__f2a1da9f._.js:143:24)
+    at async AppRouteRouteModule.do (D:\projects\next\next_testing\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:26:34112)
+    at async AppRouteRouteModule.handle (D:\projects\next\next_testing\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:26:41338)
+    at async doRender (D:\projects\next\next_testing\node_modules\next\dist\server\base-server.js:1513:42)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\projects\next\next_testing\node_modules\next\dist\server\base-server.js:1915:28)
+    at async DevServer.renderPageComponent (D:\projects\next\next_testing\node_modules\next\dist\server\base-server.js:2403:24)
+    at async DevServer.renderToResponseImpl (D:\projects\next\next_testing\node_modules\next\dist\server\base-server.js:2440:32)
+    at async DevServer.pipeImpl (D:\projects\next\next_testing\node_modules\next\dist\server\base-server.js:1007:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\projects\next\next_testing\node_modules\next\dist\server\next-server.js:305:17)
+    at async DevServer.handleRequestImpl (D:\projects\next\next_testing\node_modules\next\dist\server\base-server.js:899:17)
+    at async D:\projects\next\next_testing\node_modules\next\dist\server\dev\next-dev-server.js:371:20
+    at async Span.traceAsyncFn (D:\projects\next\next_testing\node_modules\next\dist\trace\trace.js:157:20)
+    at async DevServer.handleRequest (D:\projects\next\next_testing\node_modules\next\dist\server\dev\next-dev-server.js:368:24)
+    at async invokeRender (D:\projects\next\next_testing\node_modules\next\dist\server\lib\router-server.js:237:21)
+    at async handleRequest (D:\projects\next\next_testing\node_modules\next\dist\server\lib\router-server.js:428:24)
+    at async requestHandlerImpl (D:\projects\next\next_testing\node_modules\next\dist\server\lib\router-server.js:452:13)
+    at async Server.requestListener (D:\projects\next\next_testing\node_modules\next\dist\server\lib\start-server.js:158:13)
