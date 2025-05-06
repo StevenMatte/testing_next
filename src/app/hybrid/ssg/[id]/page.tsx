@@ -11,7 +11,7 @@ type Movie = {
 
 // fetch movie detail for a single id
 async function getMovie(id: string) {
-  const res = await fetch(`${process.env.BACKEND_URL}/api/movies${id}`, { cache: "no-store" });
+  const res = await fetch(`${process.env.BACKEND_URL}/api/movies/${id}`, { cache: "no-store" });
   return res.json();
 }
 

@@ -11,7 +11,7 @@ type Movie = {
 
 // fetch movie detail for a single id
 async function getMovie(id: string) {
-  const res = await fetch(`${process.env.BACKEND_URL}/api/movies/${id}`, {
+  const res = await fetch(`${process.env.BACKEND_URL}/api/movies${id}`, {
     next: {
       revalidate: 10, //ISR Using caching, refresh the cache once 10 second pass
     },
